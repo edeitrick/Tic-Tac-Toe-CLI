@@ -76,11 +76,10 @@ prompt.start();
 prompt.get(['position'],function(err,res){
  if(validate(res.position) === true)
  {
-   markBoard(res.position,player);
    printBoard();
+   markBoard(res.position,player);
    if(checkwin(player)===true)
    {
-     console.log(colors.green.bold('Winner Winner!!'));
      return;
    }
    if(player === 'X')
@@ -90,7 +89,7 @@ prompt.get(['position'],function(err,res){
      playerTurn('X');
    }
  }else {
-   console.log(colors.green.bold('incorrect input please try again..'));
+   console.log(colors.green.bold('Invalid move -- try again'));
    playerTurn(player);
  }
 });
