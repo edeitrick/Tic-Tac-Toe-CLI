@@ -20,5 +20,3 @@ Just run the cli on terminal:
 ### Demo
 
 ![Terminal running demo](images/demo.gif)
-
-Made with :heart: by Rupeshiya
